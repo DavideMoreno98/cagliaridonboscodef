@@ -1,0 +1,663 @@
+
+<!doctype html>
+<html>
+<head>
+
+<script type="text/javascript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function AddToFaves_hp(){
+	var is_4up = parseInt(navigator.appVersion);
+	var is_mac   = navigator.userAgent.toLowerCase().indexOf("mac")!=-1;
+	var is_ie   = navigator.userAgent.toLowerCase().indexOf("msie")!=-1;
+	var thePage = location.href;
+	if (thePage.lastIndexOf('#')!=-1)
+		thePage = thePage.substring(0,thePage.lastIndexOf('#'));
+	if (is_ie && is_4up && !is_mac) 
+		window.external.AddFavorite("http://www.soluzione-web.it","Soluzione web");
+		//window.external.AddFavorite(thePage,document.title);
+	}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+//-->
+</script>
+		<!-- Basic -->
+        
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	
+        <title>Soluzione web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="siti, sito, portale, portali, portal,  internet, web, gestione dei contenuti, content management, web editor, on-line">
+        <meta name="description" content="Soluzione web, sistema avanzato per la gestione on-line di siti e portali internet">
+        <meta name="revisit-after" content="7 days">
+        <meta name="author" content="Soluzione web"> 
+        <meta name="copyright" content="Soluzione web"> 
+        <meta name="language" content="Italian">
+        
+        <meta property="og:url"           content="http://www.soluzione-web.it/Objects/Home1.asp?ID=&Titolo=" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Soluzione web" />
+        <meta property="og:description"   content="Soluzione web, sistema avanzato per la gestione on-line di siti e portali internet" />
+        <meta property="og:image"         content="" />
+            
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/img/icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+		<link rel="manifest" href="/img/icons/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#f8ab04">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="/vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="/css/theme.css">
+		<link rel="stylesheet" href="/css/theme-elements.css">
+		<link rel="stylesheet" href="/css/theme-blog.css">
+		<link rel="stylesheet" href="/css/theme-shop.css">
+		<link rel="stylesheet" href="/css/theme-animate.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="/vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="/vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="/vendor/rs-plugin/css/navigation.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="/css/skins/default.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="/css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="/vendor/modernizr/modernizr.js"></script>
+
+</head>
+
+	<body>
+
+		<div class="body">
+			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 148, 'stickySetTop': '-148px', 'stickyChangeLogo': true}">
+				<div class="header-body border-color-primary border-top-0 box-shadow-none">
+
+					<div class="header-top header-top-default border-bottom-0 border-top-0">
+						<div class="container">
+							<div class="header-row py-2">
+								<div class="header-column justify-content-start">
+									<div class="header-row">
+										<nav class="header-nav-top">
+											<ul class="nav nav-pills text-uppercase text-2">
+												<li class="nav-item nav-item-anim-icon">
+													<a class="nav-link pl-0" href="https://www.soluzione.eu" target="_blank"><i class="fas fa-angle-right"></i> Soluzione</a>
+												</li>
+												<li class="nav-item nav-item-anim-icon">
+													<a class="nav-link" href="contact-us.html"><i class="fas fa-angle-right"></i> Contattaci</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<div class="header-column justify-content-end">
+									<div class="header-row">
+										<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean">
+											<li class="social-icons-facebook"><a href="https://www.facebook.com/Soluzione-Srl-unipersonale-146666112066839/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-container container z-index-2">
+						<div class="header-row py-2">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo header-logo-sticky-change">
+										<img class="header-logo-sticky opacity-0" alt="Soluzione-web" width="200" height="48" data-sticky-width="178" data-sticky-height="43" data-sticky-top="88" src="/img/logo-dark.png">
+										<img class="header-logo-non-sticky opacity-0" alt="Soluzione-web" width="200" height="48" src="/img/logo-default.png">
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<ul class="header-extra-info d-flex align-items-center">
+										<li class="d-none d-sm-inline-flex">
+											<div class="header-extra-info-text">
+												<label>INVIA UNA E-MAIL</label>
+												<strong><a href="mailto:info@soluzione-web.it">INFO@SOLUZIONE-WEB.IT</a></strong>
+											</div>
+										</li>
+										<li>
+											<div class="header-extra-info-text">
+												<label>LINEA DIRETTA</label>
+												<strong><a href="tel:8001234567">02 96729075</a></strong>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-nav-bar bg-primary" data-sticky-header-style="{'minResolution': 991}" data-sticky-header-style-active="{'background-color': 'transparent'}" data-sticky-header-style-deactive="{'background-color': '#0088cc'}">
+						<div class="container">
+							<div class="header-row">
+								<div class="header-column">
+									<div class="header-row justify-content-end">
+										<div class="header-nav header-nav-force-light-text justify-content-start py-2 py-lg-3" data-sticky-header-style="{'minResolution': 991}" data-sticky-header-style-active="{'margin-left': '235px'}" data-sticky-header-style-deactive="{'margin-left': '0'}">
+											<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+												<nav class="collapse">
+													<ul class="nav nav-pills" id="mainNav">
+															<li class="dropdown-full-color dropdown-light">
+		<a href="javascript:"  class="dropdown-item dropdown-toggle active">Home</a>
+	</li>
+	<li class="dropdown-full-color dropdown-light"><a class="dropdown-item dropdown-toggle" href="Pagina.asp?ID=2&T=Panoramica" title="Panoramica">Panoramica </a></li>
+	<li class="dropdown-full-color dropdown-light"><a class="dropdown-item dropdown-toggle" href="Pagina.asp?ID=3&T=Tour interattivo" title="Tour interattivo">Tour interattivo </a></li>
+	<li class="dropdown-full-color dropdown-light"><a class="dropdown-item dropdown-toggle" href="Pagina.asp?ID=4&T=Prova on-line" title="Prova on-line">Prova on-line </a></li>
+	<li class="dropdown-full-color dropdown-light"><a class="dropdown-item dropdown-toggle" href="Pagina.asp?ID=24&T=Portfolio" title="Portfolio">Portfolio </a></li>
+	<li class="dropdown-full-color dropdown-light"><a class="dropdown-item dropdown-toggle" href="Pagina.asp?ID=5&T=Informazioni" title="Informazioni">Informazioni </a></li>
+
+													</ul>
+												</nav>
+											</div>
+											<button class="btn header-btn-collapse-nav my-2" data-toggle="collapse" data-target=".header-nav-main nav">
+												<i class="fas fa-bars"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+				<div class="slider-container light rev_slider_wrapper" style="height: 650px;">
+					<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 650, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': true, 'style': 'arrows-style-1 arrows-big arrows-dark' }, 'bullets': {'enable': false, 'style': 'bullets-style-1 bullets-color-primary', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
+						<ul>
+														<li data-transition="boxslide">
+								<img src="/Objects/7_App_file/UltraHD_7_1.jpg"  
+									alt=""
+									data-bgposition="right center"
+									data-bgpositionend="center center"
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									data-kenburns="on"
+									data-duration="9000"
+									data-ease="Linear.easeNone"
+									data-scalestart="105"
+									data-scaleend="100"
+									data-rotatestart="0"
+									data-rotateend="0"
+									data-offsetstart="0 0"
+									data-offsetend="0 0"
+									data-bgparallax="0"
+									class="rev-slidebg">
+
+									<a href="Pagina.asp?ID=7&Titolo=Liberi di comunicare!">
+
+								<div class="tp-caption font-weight-light text-color-dark"
+									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+									data-x="center"
+									data-y="center" 
+									data-fontsize="['18','18','18','50']"
+									data-lineheight="['20','20','20','55']"
+									style="color: #b5b5b5;">Soluzione web, content management</div>
+
+								<div class="tp-caption main-label"
+									data-x="center"
+									data-y="210"
+									data-start="1500"
+									data-whitespace="nowrap"						 
+									data-transform_in="y:[100%];s:500;"
+									data-transform_out="opacity:0;s:500;"
+									data-mask_in="x:0px;y:0px;">Liberi di comunicare!</div>
+								</a>
+								<a class="tp-caption btn btn-primary font-weight-bold"
+									href="Pagina.asp?ID=7&Titolo=Liberi di comunicare!"
+									data-frames='[{"delay":3000,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"y:0;o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="center" data-hoffset="0"
+									data-y="center" data-voffset="70"
+									data-paddingtop="['15','15','15','30']"
+									data-paddingbottom="['15','15','15','30']"
+									data-paddingleft="['40','40','40','57']"
+									data-paddingright="['40','40','40','57']"
+									data-fontsize="['13','13','13','25']"
+									data-lineheight="['20','20','20','25']">Leggi...</a>
+
+							</li>
+							<!--
+									alt=""
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									data-kenburns="on"
+									data-duration="9000"
+									data-ease="Linear.easeNone"
+									data-scalestart="110"
+									data-scaleend="100"
+									data-rotatestart="0"
+									data-rotateend="0"
+									data-offsetstart="0 0"
+									data-offsetend="0 0"
+									data-bgparallax="10"
+									class="rev-slidebg"
+							-->							<li data-transition="boxslide">
+								<img src="/Objects/4_App_file/UltraHD_9.jpg"  
+									alt=""
+									data-bgposition="right center"
+									data-bgpositionend="center center"
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									data-kenburns="on"
+									data-duration="9000"
+									data-ease="Linear.easeNone"
+									data-scalestart="105"
+									data-scaleend="100"
+									data-rotatestart="0"
+									data-rotateend="0"
+									data-offsetstart="0 0"
+									data-offsetend="0 0"
+									data-bgparallax="0"
+									class="rev-slidebg">
+
+									<a href="Pagina.asp?ID=4&Titolo=Prova on-line">
+
+								<div class="tp-caption font-weight-light text-color-dark"
+									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+									data-x="center"
+									data-y="center" 
+									data-fontsize="['18','18','18','50']"
+									data-lineheight="['20','20','20','55']"
+									style="color: #b5b5b5;">Tocca con mano...</div>
+
+								<div class="tp-caption main-label"
+									data-x="center"
+									data-y="210"
+									data-start="1500"
+									data-whitespace="nowrap"						 
+									data-transform_in="y:[100%];s:500;"
+									data-transform_out="opacity:0;s:500;"
+									data-mask_in="x:0px;y:0px;">Prova on-line</div>
+								</a>
+								<a class="tp-caption btn btn-primary font-weight-bold"
+									href="Pagina.asp?ID=4&Titolo=Prova on-line"
+									data-frames='[{"delay":3000,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"y:0;o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="center" data-hoffset="0"
+									data-y="center" data-voffset="70"
+									data-paddingtop="['15','15','15','30']"
+									data-paddingbottom="['15','15','15','30']"
+									data-paddingleft="['40','40','40','57']"
+									data-paddingright="['40','40','40','57']"
+									data-fontsize="['13','13','13','25']"
+									data-lineheight="['20','20','20','25']">Leggi...</a>
+
+							</li>
+							<!--
+									alt=""
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									data-kenburns="on"
+									data-duration="9000"
+									data-ease="Linear.easeNone"
+									data-scalestart="110"
+									data-scaleend="100"
+									data-rotatestart="0"
+									data-rotateend="0"
+									data-offsetstart="0 0"
+									data-offsetend="0 0"
+									data-bgparallax="10"
+									class="rev-slidebg"
+							-->							<li data-transition="boxslide">
+								<img src="/Objects/5_App_file/UltraHD_2.jpg"  
+									alt=""
+									data-bgposition="right center"
+									data-bgpositionend="center center"
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									data-kenburns="on"
+									data-duration="9000"
+									data-ease="Linear.easeNone"
+									data-scalestart="105"
+									data-scaleend="100"
+									data-rotatestart="0"
+									data-rotateend="0"
+									data-offsetstart="0 0"
+									data-offsetend="0 0"
+									data-bgparallax="0"
+									class="rev-slidebg">
+
+									<a href="Pagina.asp?ID=5&Titolo=Informazioni">
+
+								<div class="tp-caption font-weight-light text-color-dark"
+									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+									data-x="center"
+									data-y="center" 
+									data-fontsize="['18','18','18','50']"
+									data-lineheight="['20','20','20','55']"
+									style="color: #b5b5b5;">Richiesta informazioni</div>
+
+								<div class="tp-caption main-label"
+									data-x="center"
+									data-y="210"
+									data-start="1500"
+									data-whitespace="nowrap"						 
+									data-transform_in="y:[100%];s:500;"
+									data-transform_out="opacity:0;s:500;"
+									data-mask_in="x:0px;y:0px;">Informazioni</div>
+								</a>
+								<a class="tp-caption btn btn-primary font-weight-bold"
+									href="Pagina.asp?ID=5&Titolo=Informazioni"
+									data-frames='[{"delay":3000,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"y:0;o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="center" data-hoffset="0"
+									data-y="center" data-voffset="70"
+									data-paddingtop="['15','15','15','30']"
+									data-paddingbottom="['15','15','15','30']"
+									data-paddingleft="['40','40','40','57']"
+									data-paddingright="['40','40','40','57']"
+									data-fontsize="['13','13','13','25']"
+									data-lineheight="['20','20','20','25']">Leggi...</a>
+
+							</li>
+							<!--
+									alt=""
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									data-kenburns="on"
+									data-duration="9000"
+									data-ease="Linear.easeNone"
+									data-scalestart="110"
+									data-scaleend="100"
+									data-rotatestart="0"
+									data-rotateend="0"
+									data-offsetstart="0 0"
+									data-offsetend="0 0"
+									data-bgparallax="10"
+									class="rev-slidebg"
+							-->
+						</ul>
+					</div>
+				</div>
+
+				<div class="home-intro mb-0" id="home-intro">
+					<div class="container">
+
+						<div class="row align-items-center">
+							<div class="col-lg-8">
+								<p>
+									La soluzione più semplice e veloce per gestire il tuo <span class="highlighted-word highlighted-word-animation-1 text-color-primary font-weight-semibold text-5">sito internet</span>
+									<span>Completamenteflessibile, personalizzabile ed espandibile.</span>
+								</p>
+							</div>
+							<div class="col-lg-4">
+								<div class="get-started text-left text-lg-right">
+									<a href="Pagina.asp?ID=4&T=Prova%20on-line" class="btn btn-primary btn-lg text-3 font-weight-semibold px-4 py-3">Prova ora!</a>
+									<div class="learn-more">oppure <a href="Pagina.asp?ID=5&T=Informazioni">richiedi informazioni.</a></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<section class="section section-parallax section-height-3 border-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 7, 'parallaxHeight': '150%', 'offset': 100}" data-image-src="/img/parallax/parallax-soluzione-web.jpg">
+					<div class="container pb-5 mb-5">
+						<div class="row text-center pb-5 mb-5">
+							<div class="col-md-10 mx-md-auto pb-5 mb-5">
+								<h1 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeInUpShorter">
+									<span>Utilizzare Soluzione web è, </span>
+									<span class="word-rotator-words bg-primary">
+										<b class="is-visible">facile</b>
+										<b>intuitivo</b>
+									</span>
+									<span> e alla portata di tutti.</span>
+								</h1>
+								<p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+									Non sono richieste infatti competenze informatiche particolari o la conoscenza di linguaggi internet (html o altro).<br>
+									Voi vi occupate dei contenuti, a tutto il resto ci pensa<br>
+									<strong>Soluzione web</strong> <em>the web solution!</em>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section bg-color-grey-scale-1 section-height-3 border-0 m-0">
+					<div class="container">
+						<div class="row hidden">
+							<div class="col">
+								<h2 class="font-weight-normal text-center text-6 pb-3">le <strong class="font-weight-extra-bold">caratteristiche</strong></h2>
+							</div>
+						</div>
+						<div class="row mb-lg-4">
+							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
+								<div class="feature-box feature-box-style-2">
+									<div class="feature-box-icon">
+										<i class="fas fa-clock text-color-primary"></i>
+									</div>
+									<div class="feature-box-info">
+										<h4 class="font-weight-bold mb-2">Veloce</h4>
+										<p>Hai una nuova idea...? Comunicala al mondo! Con Soluzione-web in <span class="alternative-font">30 secondi</span> puoi pubblicare i tuoi contenuti. Comunicare con i tuoi utenti non è mai stato così veloce</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
+								<div class="feature-box feature-box-style-2">
+									<div class="feature-box-icon">
+										<i class="fas fa-thumbs-up text-color-primary"></i>
+									</div>
+									<div class="feature-box-info">
+										<h4 class="font-weight-bold mb-2">Semplice</h4>
+										<p>Con Soluzione-web gestire il tuo sito internet è vermanete semplice. Non serve alcuna competenze di programmazione. Con pochi semplici passaggi puoi gestire in modo autonomo tutti i contenuti del tuo sito internet.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+								<div class="feature-box feature-box-style-2">
+									<div class="feature-box-icon">
+										<i class="fas fa-mobile-alt text-color-primary"></i>
+									</div>
+									<div class="feature-box-info">
+										<h4 class="font-weight-bold mb-2">Responsive</h4>
+										<p><span class="alternative-font">PC, tablet o smartphone</span>: ogni dispositivo visualizza il tuo sito in modo perfetto. I template Soluzione-web sono completamente flessibili e si adattano dinamicamente al dispositivo utilizzato.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
+								<div class="feature-box feature-box-style-2">
+									<div class="feature-box-icon">
+										<i class="fas fa-palette text-color-primary"></i>
+									</div>
+									<div class="feature-box-info">
+										<h4 class="font-weight-bold mb-2">Personalizzabile</h4>
+										<p>Uno staff di grafici vi accompagna nello studio dell'immagine più adatta a voi... dal logotipo alla comunicazione coordinata.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
+								<div class="feature-box feature-box-style-2">
+									<div class="feature-box-icon">
+										<i class="fas fa-puzzle-piece text-color-primary"></i>
+									</div>
+									<div class="feature-box-info">
+										<h4 class="font-weight-bold mb-2">Flessibile</h4>
+										<p>Decine di <span class="alternative-font">moduli</span> dinamici permettono di arricchire il vostro sito internet con nuove funzioni aggiungendo maggiore interattività con i vostri utenti.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+								<div class="feature-box feature-box-style-2">
+									<div class="feature-box-icon">
+										<i class="fas fa-tools text-color-primary"></i>
+									</div>
+									<div class="feature-box-info">
+										<h4 class="font-weight-bold mb-2">Espandibile</h4>
+										<p>Il nostro team di programmatori è sempre disponibile per ascoltare le vostre esigenze e sviluppare nuove funzionalità per rendere il vostro sito internet sempre più personalizzato.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+
+			</div>
+
+			<footer id="footer" class="mt-0">
+				<div class="container my-4">
+					<div class="row pb-0">
+						<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+							<img src="/img/logo-white.png" class="mb-lg logo-soluzione-footer">
+							<p>Soluzione web, sistema avanzato per la gestione on-line di siti e portali internet</p>
+						</div>
+						<div class="col-md-6 col-lg-6 mb-5 mb-lg-0 mt-3">
+							<h4 class="pb-2">Contatti</h4>
+							<ul class="list list-icons list-icons-lg">
+								<li class="m-0"><a href="https://www.google.it/maps/place/Via+Giuseppe+di+Vittorio,+25,+20824+Lazzate+MB/data=!4m2!3m1!1s0x478697143a0091cd:0xfb7f3df8a055bee8?sa=X&ved=0ahUKEwjjiaXAo47KAhUH7g4KHS-yACoQ8gEIHjAA" target="_blank"><i class="fa fa-map-marker"></i></a> <p class="m-0"><strong>Sede legale:</strong> via V. Pisani, 7 - 20124 Milano</a></p></li>
+								<li class="m-0"><i class="fa text-color-primary fa-envelope-o"></i> <p class="m-0"><strong>Sede operativa:</strong> Via F. Bernini, 22/A  - 43126 Parma (PR)</p></li>
+								<li class="m-0"><i class="fa text-color-primary fa-phone"></i> <p class="m-0"><strong>Telefono:</strong> 0521.299499</p></li>
+								<li class="m-0"><i class="fa text-color-primary fa-print"></i> <p class="m-0"><strong>Fax:</strong> </p></li>
+								<li class="m-0"><i class="fa text-color-primary fa-envelope"></i> <p class="m-0"><strong>Email:</strong> info@soluzione.eu</p></li>
+								<li class="m-0"><i class="fa text-color-primary fa-envelope-o"></i> <p class="m-0"><strong>Pec:</strong> soluzione@overpec.it</p></li>
+								<li class="m-0"><i class="fa text-color-primary fa-university"></i> <p class="m-0"><strong>C.F. e P.I.:</strong> 12110930158</p></li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-lg-3 mt-3">
+							<h5 class="pb-2 text-5 text-transform-none font-weight-semibold text-color-light mb-4">Social Media</h5>
+							<ul class="footer-social-icons social-icons m-0">
+								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="footer-copyright footer-copyright-style-2 pb-4">
+						<div class="py-2">
+							<div class="row py-4">
+								<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
+									<p>
+										
+										Soluzione s.r.l. unipersonale - C.F. e P.I. 12110930158 - 
+										Copyright &copy; 2018 Soluzione s.r.l.
+										<a href="https://privacy.soluzione.eu/home/app/default/informativa.php?t=privacy&d=slz_aziendali" title="Privacy" target="_blank">Privacy</a> - 
+										<a href="mailto:privacy@soluzione.eu" title="Comunicazioni privacy">Comunicazioni privacy</a> - 
+										<a href="https://privacy.soluzione.eu/home/app/default/informativa.php?t=cookie&d=slz_aziendali" title="Privacy" target="_blank">Cookie policy</a> - 
+										Powered by <span onclick="window.open('https://www.soluzione-web.it','SoluzioneWeb','width=790, height=590')" style="cursor:pointer">Soluzione-web</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Vendor -->
+		<script src="/vendor/jquery/jquery.min.js"></script>
+		<script src="/vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+		<script src="/vendor/popper/umd/popper.min.js"></script>
+		<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/vendor/common/common.min.js"></script>
+		<script src="/vendor/jquery.validation/jquery.validate.min.js"></script>
+		<script src="/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+		<script src="/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="/vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="/vendor/vide/jquery.vide.min.js"></script>
+		<script src="/vendor/vivus/vivus.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="/js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="/js/views/view.contact.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="/js/theme.init.js"></script>
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-12345678-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		 -->
+
+	</body>
+
+</html>

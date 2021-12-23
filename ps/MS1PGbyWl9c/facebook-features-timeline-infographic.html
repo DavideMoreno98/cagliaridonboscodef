@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>didattica a distanza - CADB - by Michelangelo Dessì [Infographic]</title>
+
+    <meta charset="utf-8">
+                        <meta name="robots" content="noindex, nofollow">
+            
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta property="og:url" content="https://venngage.net/ps/MS1PGbyWl9c/facebook-features-timeline-infographic" />
+    <meta property="og:title" content="didattica a distanza - CADB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="&nbsp;" />
+    <meta property="og:image" content="http://venngage.net/infographic/thumbnail/social_multipage/7ffd8445-a9ac-4bff-90d3-284c76200007.png" />
+    <meta property="og:image:secure_url" content="https://venngage.net/infographic/thumbnail/social_multipage/7ffd8445-a9ac-4bff-90d3-284c76200007.png" />
+    <meta property="og:image:width" content="476" />
+    <meta property="og:image:height" content="1831,5" />
+
+    <link rel="shortcut icon" type="image/png" href="/media/v2_img/icon-blue.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="/js/bootstrap-3.2.0/css/bootstrap.min.css">
+    <!-- Sentry.io -->
+    
+<script
+    src="https://browser.sentry-cdn.com/5.16.1/bundle.min.js"
+    integrity="sha384-XeIbINcUQP10HtmVHwZigannjNDpoQRe+uhAoW9J5HU5dHFpilP164LjqO78xtIB"
+    crossorigin="anonymous"></script>
+<script>
+    (function(){
+        var locale = (window.navigator.userLanguage
+            || (window.navigator.languages && window.navigator.languages[0])
+            || 'en'
+        ).replace(/-.*/i, '');
+        var sentryPlanType = 'Free';
+        if (0 === 2) {
+            sentryPlanType = 'Premium';
+        } else if (0 === 1) {
+            sentryPlanType = 'Education';
+        } else if (0 === 3) {
+            sentryPlanType = 'Business';
+        }
+        try {
+            Sentry.init({
+                dsn: "https://0eba565c0585430890738e666dde537e@sentry.io/104247",
+                release: "21.48.0",
+                environment: "production",
+                enabled: "production" !== 'development', // disable Sentry for local development
+                beforeSend(event, hint) {
+                    // We can do things to the event here
+                    // Filter certain variables, add some, change the footprint to allow better grouping etc.
+                    // Sentry groups by looking at stack trace first, then exception, and then the error message
+                    // If we don't have sourcemaps uploaded to sentry, this ^ grouping isn't very effective
+                    // Also some events include release number and are therefore grouped as different issues
+                    // even if they're the same. By adjusting the event footprint, we can better group them.
+                    if (event.exception && false) {
+                        // We can show the user a modal for them to give us a short description of what happened
+                        // The copy in the modal is customizable using this function, the style can be overwritten
+                        // in Venngage.css. Alternatively we can create our own modal and use their API to send reports
+                        Sentry.showReportDialog({
+                            eventId: event.event_id,
+                            user: {
+                                name: "",
+                                email: "",
+                            },
+                            title: 'Oh no! Something went wrong.',
+                            labelSubmit: 'Submit Report',
+                            successMessage: 'Your feedback has been sent. Thank you! Please refresh your page.'
+                        });
+                    }
+                    return event;
+                },
+                beforeBreadcrumb(breadcrumb, hint) {
+                    if (breadcrumb.category === 'xhr') {
+                        // We can also modify breadcrumbs to make them more useful. By default, Sentry gathers things like
+                        // user clicks for example, we can find those and label them in a more descriptive way or block
+                        // some breadcrumbs altogether
+                        var responseUrl = hint.xhr.responseURL;
+                        // I'm blocking the mixpanel xhr requests because they aren't helpful at all
+                        // Instead I'm adding a more meaningful mixpanel breadcrumb in the analytic/mixpanel function
+                        if (/\bhttps:\/\/api-js.mixpanel.com\b/.test(responseUrl)) {
+                            return null;
+                        }
+                    }
+                    return breadcrumb;
+                },
+                // Allows us to allow events from these urls only
+                whitelistUrls: [
+                ],
+                // Allows us to block specific urls from sending events to Sentry
+                blacklistUrls: [
+                    // Saved html pages on user devices
+                    /file.*/
+                ],
+                // Allows us to block specific errors from being sent to Sentry
+                ignoreErrors: [
+                ]
+            })
+            Sentry.configureScope(function(scope) {
+                // Add user specific attributes that are searchable by Sentry
+                scope.setUser({
+                    'id': "",
+                });
+                // Tags are key: value pairs that are searchable by Sentry
+                // For example we can add plan type for better prioritization
+                // We can also add all feature flags for this user
+                scope.setTag('plan', sentryPlanType);
+                scope.setTag('admin', 0 === 3);
+                // Provides extra information available on the issue page
+                // to give more context, but not searchable on Sentry
+                scope.setExtra('locale', locale);
+            });
+        } catch (err) {
+            console.log('Sentry is not defined');
+        }
+    })();
+</script>
+
+        </head>
+
+<body>
+                <!-- V3 MENUS  -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<nav class="navbar navbar-fixed-top venngage-navbar-v2 " role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-venngage-nav-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ i18n_page_links.homepage }}"><img src="/media/v2_img/venngage-logo.svg" alt="Venngage" /></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-venngage-nav-menu">
+            <ul class="nav navbar-nav navbar-right sign-in">
+                <li><a href="https://venngage.com/">Homepage</a></li>
+                <li><a href="https://venngage.com/features">Funzionalità</a></li>
+                <li><a href="https://venngage.com/pricing">Prezzi</a></li>
+                <li><a href="https://venngage.com/templates">Modelli</a></li>
+                <li><a href="https://venngage.com/gallery">Galleria</a></li>
+                <li><a href="https://venngage.com/blog">Blog</a></li>
+                <li class="active"><a href="/signin" >Accedi</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+                    <div class="panels banner-wrapper" id="publish_page_container">
+                        <div class="banner-content">
+                <div class="banner-icon-wrapper">
+                    <img
+                        src="/img/icons/shield.svg"
+                        alt="Shield image"
+                    />
+                </div>
+                <div class="banner-message-wrapper">
+                    Seems suspicious?
+                    <a
+                        id="report_link"
+                        href="https://venngage.typeform.com/to/xOUCTk?referrer="
+                        target="_blank"
+                    >Report this page to Venngage</a>
+                    to help us prevent malicious content.
+                </div>
+            </div>
+                        <div id="publish_page_social" class="row">
+            <div id="infographic_title" class="use-ellipsis">
+                didattica a distanza - CADB
+            </div>
+        </div>
+
+        <div id="published_infographic_container">
+            <div id="published_infographic">
+                <div id="WidgetLayer" style="width: 100%; height: 100%; position: absolute;"></div>
+                <div id="widget_container"></div>
+                <div
+                    id='page_number'
+                                        style="display: none"
+                    >
+                    
+                </div>
+                <div id="pages_container"></div>
+            </div>
+            <div id="MultipageOptions"></div>
+        </div>
+        <div style="text-align: center;">
+            <a href="https://venngage.com/" target="_blank"
+                style="color: black; text-decoration: none;">Free Infographic Maker</a><a
+                href="https://venngage.com/" target="_blank"><img
+                src="/media/v2_img/logo-black.png" width="200"
+                alt="Create free infographics with Venngage"></a>
+        </div>
+                        </div>
+    
+                
+                    
+            <script>
+    (function(c,o,v,i,e,w){
+        c[v]=c[v]||function(){(c[v].a=c[v].a||[]).push(arguments)}; var s=o.createElement(i);s.src=e;s.async=1;
+        var h=o.getElementsByTagName(i)[0]; h.parentNode.insertBefore(s,h);
+        c.addEventListener('error',function(err){c[v]('error',err)}); c.addEventListener('message',function(msg){c[v]('message',msg)})
+    })(window,document,'coview','script','https://cdn.coview.com/coview.js');
+    coview('start', { projectKey:'yFsNWkDXmjs'});
+</script>
+        <script type="text/javascript">
+    (function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+    0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+        mixpanel.init('1c26d722c8b30acaa938e43c895a2411', {
+            loaded: function (mixpanel) { 
+                var email = "";
+                if (email !== "") {
+                    mixpanel.identify(email);
+                }
+            }
+        });
+</script>
+        <script type="text/javascript">
+    window.intercomSettings = {
+        app_id: "q7yzwzgo"
+    };
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/q7yzwzgo';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+
+    if (typeof window.Intercom === 'function') {
+        Intercom('onShow', function() {
+            if (typeof window.mixpanel === 'object' && typeof window.mixpanel.track === 'function') {
+                mixpanel.track('Click on Chat Icon');
+                Intercom('trackEvent', 'Start chat');
+            }
+        });
+        Intercom('onHide', function() {
+            if (typeof window.mixpanel === 'object' && typeof window.mixpanel.track === 'function') {
+                mixpanel.track('Hide Chat');
+            }
+        });
+    };
+</script>
+    
+    <link rel="stylesheet" href="/app/dist/core/venngage.css?v=21.48.0" />
+
+    <script type="text/javascript" charset="utf-8" src="/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/js/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script type='text/javascript' charset="utf-8" src='/media/utils/map_data_script.js'></script>
+
+        <script type="text/javascript">
+        var __vg_config = window.__vg_config || {
+            env: 'production',
+            api: {
+                endpoint: {
+                    'ADD_COMMENT': '/rest/comments/add_comment',
+                    'GET_COMMENTS': '/rest/comments/get_infographic_comments',
+                }
+            },
+            user: {
+                id: '',
+                firstName: '',
+                lastName: '',
+            },
+            __init_redux__: {
+                showLoginPrompt: false,
+            }
+        };
+    </script>
+                <script>
+        // Legacy global config
+        var isMultipage = true;
+        var users_infographs_list = [];
+        var iconMediaBucket = 's3.amazonaws.com/media.venngage.com/icons/v1/';
+        var userMediaBucket = 'user-media.venngage.com';
+        var imageSearchLibraryBucket = 'image-library.venngage.com';
+        var vidaIntegrationBucket = 'vida-integration.venngage.com';
+        var mode = 'readonly';
+        var zoom = false;
+        var animate = true;
+        var enableInteraction = true;
+        var snapToGrid = false;
+        var snapToGuide = false;
+        var VGLibrary = VGLibrary || {};
+        var accessToken = 'MS1PGbyWl9c';
+        var accessTokenType = 'public';
+        var isBleedMarksOn = '';
+        var isPreview = '';
+
+        // Feature Flag
+        var enable_richtext_widget = true;
+
+        // For rendering CTA overlay
+        var showCTAPopup = true;
+        // array of page ids used to validate page hyperlinks
+        var documentPages = ["c8ff56d9-6b48-43db-8eb2-86b0b2fc38f6"];
+
+        VGLibrary.icons = {};
+        VGLibrary.helpers = {};
+        VGLibrary.deprecateIcons = {};
+        VGLibrary.iconMediaBucket = iconMediaBucket;
+
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<!-- Load latin fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel:400|Abril+Fatface:400|Aldrich:400|Alegreya:400,700,400i,700i|Alfa+Slab+One:400|Allerta+Stencil:400|Amaranth:400,700,400i,700i|Anton:400|Archivo+Black:400|Archivo+Narrow:400,700,400i,700i|Arimo:400,700,400i,700i|Arvo:400,700,400i,700i|Asap:400|Averia+Libre:400,700,400i,700i|Averia+Sans+Libre:400,700,400i,700i|Averia+Serif+Libre:400,700,400i,700i|Bangers:400|Berkshire+Swash:400|Cabin:400,700,400i,700i|Chewy:400|Cinzel:400,700|Codystar:400|Contrail+One:400|Coustard:400|Didact+Gothic:400|Dosis:400,700|EB+Garamond:400|Economica:400,700,400i,700i|Expletus+Sans:400,700,400i,700i|Fredericka+the+Great:400|Fredoka+One:400|Graduate:400|Grand+Hotel:400|Great+Vibes:400|Josefin+Sans:400,700,400i,700i|Josefin+Slab:400,700,400i,700i|Julius+Sans+One:400|Karla:400,700,400i,700i|Knewave:400|Lato:400,700,400i,700i|Limelight:400|Lobster+Two:400,700,400i,700i|Lora:400,700,400i,700i|Lustria:400|Merriweather:400,700,400i,700i|Monoton:400|Montserrat:400,700|Muli:400,700,400i,700i|News+Cycle:400,700|Nixie+One:400|Nunito:400,700|Old+Standard+TT:400,700,400i,700i|Open+Sans:400,700,400i,700i|Oswald:400,700|Overlock:400,700,400i,700i|Oxygen:300,400,700|Pacifico:400|Pathway+Gothic+One:400|Paytone+One:400|Petit+Formal+Script:400|Philosopher:400,700,400i,700i|Playball:400|Playfair+Display:400,700,400i,700i|Poiret+One:400|Poppins:400,700|Questrial:400|Quicksand:400|Raleway:400,700,400i,700i|Roboto:400,700,400i,700i|Roboto+Condensed:400,700,400i,700i|Roboto+Slab:400,700|Rochester:400|Rozha+One:400|Rye:400|Satisfy:400|Share:400,700,400i,700i|Simonetta:400,700,400i,700i|Sintony:400,700&subset=all" />
+<!-- Load 2nd batch of Latin fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Six+Caps:400|Source+Sans+Pro:400,700,400i,700i|Ubuntu+Mono:400,700,400i,700i|Ultra:400|Unkempt:400,700|Unica+One:400|Varela+Round:400|Vast+Shadow:400|Vidaloka:400|Voltaire:400|VT323:400|Wire+One:400|Yellowtail:400|Fira+Sans:400,700,400i,700i|Kanit:400,700,400i,700i|Lateef:400|Amiri:400,700,400i,700i|Tajawal:400,700|Mirza:400,700|Scheherazade:400,700|Just+Another+Hand:400|Fjalla+One:400|Kaushan+Script:400|Rubik+Mono+One:400|Exo:400,700,400i,700i|Ubuntu:400,700,400i,700i|Amatic+SC:400,700|Assistant:400|Cairo:400,700|Comfortaa:400,700|Inter:400,700,400i,700i|Itim:400|Happy+Monkey:400|Heebo:400,700|Lalezar:400|Maven+Pro:400,700|Mitr:400,700|Pattaya:400|Permanent+Marker:400|Prompt:400,700,400i,700i|Rubik:400,700,400i,700i|Titillium+Web:400,700,400i,700i|Trirong:400|Baloo+Thambi:400|Barlow+Condensed:400|Cabin+Sketch:400|Courgette:400|Dancing+Script:400|Fascinate+Inline:400|Indie+Flower:400|Kalam:400|Libre+Baskerville:400|Libre+Franklin:400|Patrick+Hand:400|PT+Sans:400|PT+Sans+Narrow:400|PT+Serif:400|Raleway+Dots:400|Ribeye+Marrow:400|Shrikhand:400|Sue+Ellen+Francisco:400|Quantico:400|Palanquin:400&subset=all" />
+
+<!-- Load thai fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit:400,700,400italic,700italic&subset=all" />
+<!-- Load arabic fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lateef|Amiri:400,700,400italic,700italic|Tajawal:400,700|Mirza:400,700|Scheherazade:400,700&subset=all" />
+<!-- Load cyrillic fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,400italic,700italic&subset=all" />
+<!-- Load chinese fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,700,400i,700i&subset=all" />
+
+<!-- Load default fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+<!-- Load custom fonts -->
+    <link rel="stylesheet" href="https://venngage.net/rest/customfonts/css?user_id=7207031" media="all">
+
+    <script type="text/javascript" charset="utf-8" src="/app/dist/core/libs.min.js?v=21.48.0"></script>
+
+    <script type="text/javascript" charset="utf-8" src="/app/dist/core/core.min.js?v=21.48.0"></script>
+
+
+        <script id="__defaultConfig" type="application/json">
+        {"infographicContainer":"#published_infographic_container","pageContainer":"#published_infographic","widgetContainer":"#widget_container","widgetLayer":"#WidgetLayer","bleedOverlayPreview":".bleedOverlayPreview","bleedMarks":null,"mode":"readonly","interaction":true}
+    </script>
+    
+    <script id="infographicMetadata" type="application/json">
+        {"id":"7ffd8445-a9ac-4bff-90d3-284c76200007","title":"didattica a distanza - CADB","width":816,"height":3663,"pages":["c8ff56d9-6b48-43db-8eb2-86b0b2fc38f6"],"useCleanCssInRichText":false,"isEmbed":false}
+    </script>
+
+        <script type="text/javascript">
+        var __vg_config = window.__vg_config || {
+            env: 'production',
+            api: {
+                endpoint: {
+                    'ADD_COMMENT': '/rest/comments/add_comment',
+                    'GET_COMMENTS': '/rest/comments/get_infographic_comments',
+                }
+            },
+            user: {
+                id: '',
+                firstName: '',
+                lastName: '',
+            },
+            __init_redux__: {
+                showLoginPrompt: false,
+            }
+        };
+    </script>
+    
+    <script id="previewMode" type="application/json">
+        null
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="https://cdn.venngage.com/21.48.0/f132360cf1c3bfde18243aeaac290f09fbed8c07/vendor.bundle.js?v=21.48.0"></script>
+    <script type="text/javascript" charset="utf-8" src="https://cdn.venngage.com/21.48.0/f132360cf1c3bfde18243aeaac290f09fbed8c07/widgets/js/widgets.bundle.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var page = VGLibrary.presentation.getActivePage();
+            var container = document.getElementById("published_infographic");
+
+            var height = (window.innerWidth / page.getBoundingClientRect().width) * page.getBoundingClientRect().height;
+
+            if (!!isPreview && !!isBleedMarksOn) {
+                let infographicContainer = document.querySelector('#published_infographic_container');
+                let infographicElm = document.querySelector('#published_infographic');
+                let widgetContainer = document.querySelector('#widget_container');
+
+                let cropTopLeft = document.createElement('div');
+                let cropTopRight = document.createElement('div');
+                let cropBottomLeft = document.createElement('div');
+                let cropBottomRight = document.createElement('div');
+                cropTopLeft.className = 'cropMarks cropTopLeft';
+                cropTopRight.className = 'cropMarks cropTopRight';
+                cropBottomLeft.className = 'cropMarks cropBottomLeft';
+                cropBottomRight.className = 'cropMarks cropBottomRight';
+
+                let overlayDiv = document.createElement('div');
+                overlayDiv.className = 'bleedOverlayPreview';
+
+                infographicContainer.appendChild(overlayDiv);
+
+                overlayDiv.appendChild(cropTopLeft);
+                overlayDiv.appendChild(cropTopRight);
+                overlayDiv.appendChild(cropBottomLeft);
+                overlayDiv.appendChild(cropBottomRight);
+            }
+
+            if (!!$('#report_link').length) {
+                // Pass the full url of published or shared infographic to typeform's hidden field.
+                var referrerUrl = $('#report_link').attr('href') + window.location.href;
+                $('#report_link').attr('href', referrerUrl);
+            }
+
+        });
+        var VGEditor = {
+            renderTextV5: function(settings, element, widgetId) {
+                window.widgets.renderTextV5(settings, element);
+            },
+            richText: {
+                render: function (widget) {
+                    window.widgets.renderRichText(widget);
+                },
+                useCleanCss: JSON.parse('false'),
+            },
+            smartWidget: {
+                render: function (widget) {
+                    const page = VGLibrary.presentation.getActivePage();
+
+                    // Sync the width of the widget on the first render for preview
+                    // It will run only for the case that doesn't have any styling applied after the first creation
+                    if (widget.data.type === 'HeaderFooter') {
+                        if (widget.data.content[0].minWidth !== widget.data.content[0].dimension.width) {
+                            widget.data.content[0].minWidth = widget.data.content[0].dimension.width;
+                        }
+                    }
+
+                    window.widgets.renderSmartWidget(widget);
+
+                    if (
+                        widget.data.type === 'Chart' ||
+                        widget.data.content[0].type === 'smart'
+                    ) {
+                        const widgetContainer = document.querySelector(`[data-id="${widget.identifier}"]`);
+
+                        if (! widgetContainer) {
+                            return;
+                        }
+
+                        page.widget_map[widget.identifier] = widgetContainer;
+                    }
+                },
+            },
+            widgetCanvas: {
+                render: function () {
+                    window.widgets.renderWidgetCanvas();
+                },
+                resizeCanvas: function () {
+                    window.widgets.resizeCanvas();
+                },
+            }
+        };
+
+        if (VGEditor.widgetCanvas) {
+            VGEditor.widgetCanvas.render();
+            VGEditor.widgetCanvas.resizeCanvas();
+        }
+    </script>
+
+    <!-- This script have to run at the end of this, because it calls the widget.load event bus. -->
+    <script type="text/javascript" charset="utf-8" src="https://cdn.venngage.com/21.48.0/f132360cf1c3bfde18243aeaac290f09fbed8c07/presentation/js/presentation.bundle.js"></script>
+
+    
+    
+
+        </body>
+</html>

@@ -1,0 +1,240 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+#logo {
+    margin-right: 0px;
+}
+
+@media (max-width: 1200px) {
+	#logo img {
+		height:80px;
+	}
+}
+
+#primary-menu.sub-title > ul > li > a span, #primary-menu.sub-title > div > ul > li > a span {
+    text-transform: none;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	font-family: 'Roboto Condensed', sans-serif !important;
+	font-weight:400;
+	letter-spacing:-0.01em;
+}
+#primary-menu.sub-title > ul > li > a div, #primary-menu.sub-title > div > ul > li > a div {
+	font-family: 'Roboto Condensed', sans-serif !important;
+	font-size:16px;
+	font-weight:700;
+	letter-spacing:-0.01em;
+}
+#primary-menu.sub-title > ul > li > a span, #primary-menu.sub-title > div > ul > li > a span {
+	font-size:12px;
+}
+#primary-menu.sub-title > ul > li:nth-child(1):hover > a {
+	background-color:#0054e3;
+}
+#primary-menu.sub-title > ul > li:nth-child(2):hover > a {
+	background-color:#fe0000;
+}
+#primary-menu.sub-title > ul > li:nth-child(3):hover > a {
+	background-color:#ffbe00;
+}
+#primary-menu.sub-title > ul > li:nth-child(4):hover > a {
+	background-color:#0b860b;
+}
+.portfolio-desc strong {
+	font-weight:normal;
+	text-transform:uppercase;
+	display:block;
+}
+
+.fbox-media{
+	position: relative;
+	width: 50%;		/* desired width */
+}
+.fbox-media:before{
+	content: "";
+	display: block;
+	padding-top: 50%; 	/* initial ratio of 1:1*/
+}
+.fbox-media-content{
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow:hidden;
+	background-color:#eee;
+}
+
+.feature-box.media-box .fbox-media a {
+	margin:-12.5% 0;
+}
+.feature-box h5 {
+	margin-bottom:0;
+}
+.feature-box.media-box p {
+	margin-top:8px;
+	margin-bottom:24px;
+}
+
+.footer-logo {
+	opacity:0.25;
+}
+
+#Testo table {
+	margin-bottom:0 !important;
+	width:100% !important;
+}
+#Testo table img {
+	display:inherit !important;
+}
+#Testo table img[src*="Spaziatore.gif"] {
+	display:inline-block;
+	float:left;
+}
+#page-title.settore3 {
+	background-color:#003287;
+}
+#page-title.settore4 {
+	background-color:#7e0000;
+}
+#page-title.settore5 {
+	background-color: #E59C00;
+}
+#page-title.settore1459 {
+	background-color:#004600;
+}
+.page-title-dark .breadcrumb {
+	color:rgba(255,255,255,0.7)
+}
+.Mod_05_content td {
+	width:25% !important;
+}
+#side-navigation ul li a:hover {
+	background-color:#0054e3;
+}
+#side-navigation ul li a div {
+	color:#0054e3;
+}
+#side-navigation ul li a:hover div {
+	color:#fff;
+}
+.footer-logo {
+    margin-bottom: 38px;
+}
+.footer-widgets-wrap .col_one_third .widget p {
+	line-height:22px;
+}
+#LogOut .itemText2 {
+	font-size:13px !important;
+}
+#LogOut table {
+	margin-bottom:20px !important;
+	background-color:#fafafa;
+}
+#LogOut table td {
+	padding:6px 12px;
+}
+body.stretched .swiper_wrapper {
+    height: 300px;
+}
+
+body.stretched .slider-caption-bg {
+	left:0px;
+	bottom:0;
+	padding:20px 15px;
+}
+.slide a {
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+body.stretched .slider-caption-bg h3,
+body.stretched .slider-caption-bg h5 {
+	color:rgba(255,255,255,0.85);
+	margin:0;
+	padding:0;
+}
+.popular-post li{
+	border-top:1px solid #E5E5E5;
+    padding: 10px 0;
+}
+.popular-img{
+    float: left;
+    margin-right: 10px;
+
+}
+.popular-img a img{
+    width:60px;
+    height:60px;
+}
+.popular-desc{
+    display: table;
+	margin-top:8px;
+}
+
+.last-news .popular-desc h5 {
+	margin:4px 0;
+}
+.last-news .popular-desc p.data {
+	font-size:10px;
+}
+.last-news .popular-desc p {
+	font-size:12px;
+	line-height:14px;
+	margin-bottom:0;
+}
+.sidenav li {
+	position:relative;
+}
+.sidenav li:hover ul {
+	display: block;
+    position: absolute;
+    background-color: rgba(255,255,255,0.95);
+    right: -198px;
+	top:0;
+    width: 200px;
+    z-index: 999;
+    border: 1px solid #E5E5E5;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+.sidenav li ul li a {
+	border:0 none;
+}
+.sidenav li ul li:first-child a {
+    padding-top: 10px;
+}
+.sidenav li ul li:last-child a {
+    padding-bottom: 20px;
+}
+
+.TestoSponsor {
+	margin-bottom:30px;
+}
+.sidebar-box h4 {
+	margin-bottom:10px;
+}
+#calendario-carousel h5,
+#calendario-carousel h6 {
+	margin:0;
+}
+#calendario-carousel h6 {
+	font-weight:normal;
+	font-family: 'Roboto', sans-serif;
+}
+#calendario-carousel .calendar-evento {
+	border-top: 1px solid #E5E5E5;
+    padding: 10px 0;
+}
+/*
+.wrapper         {width:100%;height:100%;margin:0 auto;background:#CCC}
+.h_iframe        {position:relative;}
+.h_iframe .ratio {display:block;width:100%;height:auto;}
+.h_iframe iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+*/
+
